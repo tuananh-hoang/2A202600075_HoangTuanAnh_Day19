@@ -1,0 +1,21 @@
+{
+  "u_001": {
+    "preferred_language": "vi",
+    "topic_affinity": [
+      "kubernetes",
+      "networking",
+      "ai",
+      "devops",
+      "cloud",
+      "security"
+    ],
+    "reading_speed": "medium",
+    "active_hours": [
+      9,
+      10,
+      14,
+      15,
+      16
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "docs": [
+    {
+      "id": "u_001_1777978961140",
+      "text": "Hôm nay tôi đọc về Kubernetes Horizontal Pod Autoscaler (HPA). HPA tự động scale số lượng pod dựa trên CPU utilization hoặc custom metrics. Cần set resource requests đúng để HPA hoạt động chính xác.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1401184,
+        "source": "doc_k8s_hpa"
+      }
+    },
+    {
+      "id": "u_001_1777978961161",
+      "text": "AWS re:Invent 2024: Amazon giới thiệu S3 Express One Zone — single-AZ storage với latency cực thấp cho AI/ML workloads. Phù hợp cho training data lakes nhưng không có multi-AZ durability.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1618178,
+        "source": "doc_aws_s3express"
+      }
+    },
+    {
+      "id": "u_001_1777978961163",
+      "text": "Nghiên cứu về Zero Trust Security Model: 'Never trust, always verify'. Mọi request phải được authenticate dù từ internal network. Áp dụng tốt cho microservices với mutual TLS (mTLS) giữa các service.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1638525,
+        "source": "doc_zerotrust"
+      }
+    },
+    {
+      "id": "u_001_1777978961175",
+      "text": "Cloud security trên GCP: Cloud Armor để chống DDoS, VPC Service Controls để giới hạn data exfiltration, Binary Authorization để enforce container image signing trong GKE cluster.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1750221,
+        "source": "doc_gcp_security"
+      }
+    },
+    {
+      "id": "u_001_1777978961176",
+      "text": "Helm chart best practices: dùng _helpers.tpl cho template functions, values.yaml có default values, và luôn set resource limits trong container spec. Kubernetes deployment rolling update strategy giúp zero-downtime deploy.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1767735,
+        "source": "doc_helm"
+      }
+    },
+    {
+      "id": "u_001_1777978961178",
+      "text": "Đọc paper 'Attention Is All You Need' — kiến trúc Transformer dùng self-attention thay vì RNN. Multi-head attention cho phép model focus vào nhiều position khác nhau cùng lúc. Đây là nền tảng của hầu hết LLM hiện đại.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1783319,
+        "source": "doc_transformer"
+      }
+    },
+    {
+      "id": "u_001_1777978961180",
+      "text": "Tìm hiểu về service mesh với Istio: sidecar proxy (Envoy) inject vào mỗi pod, xử lý load balancing, circuit breaking, và distributed tracing. Traffic management qua VirtualService và DestinationRule CRDs.",
+      "metadata": {
+        "user_id": "u_001",
+        "timestamp": 1777978961.1800601,
+        "source": "doc_istio"
+      }
+    }
+  ]
+}

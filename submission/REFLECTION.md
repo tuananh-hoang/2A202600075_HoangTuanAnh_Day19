@@ -1,28 +1,9 @@
-# Reflection — Lab 19
+# Reflection
 
-**Tên:** _<Họ Tên>_
-**Cohort:** _<A20-K1 / A20-K2 / ...>_
-**Path đã chạy:** _<lite | docker | both>_
+### Chế độ nào tối ưu cho loại truy vấn nào và tại sao?
+- **Keyword Search (BM25):** Tốt nhất cho truy vấn chính xác, mã ID, hoặc từ vựng hiếm vì nó dựa trên tần suất từ khóa (TF-IDF).
+- **Semantic Search (Vector):** Thắng khi tìm kiếm diễn giải (paraphrase) hoặc theo ngữ cảnh. Nó nắm bắt ý nghĩa qua dense embeddings, tìm ra kết quả liên quan dù từ khóa không khớp hoàn toàn.
+- **Hybrid Search (RRF):** Vượt trội với truy vấn "hỗn hợp" (mixed) chứa cả từ khóa cụ thể lẫn khái niệm rộng. Nó kết hợp thế mạnh của cả hai phương pháp trên để mang lại kết quả chuẩn xác nhất.
 
----
-
-## Câu hỏi (≤ 200 chữ)
-
-> Trên golden set 50 queries, mode nào thắng ở loại query nào (`exact` /
-> `paraphrase` / `mixed`), và tại sao? Khi nào bạn **không** dùng hybrid
-> (i.e. khi nào pure BM25 hoặc pure vector là lựa chọn đúng)?
-
-_Answer here._
-
----
-
-## Điều ngạc nhiên nhất khi làm lab này
-
-_(Optional, 1–2 câu)_
-
----
-
-## Bonus challenge
-
-- [ ] Đã làm bonus (xem `bonus/`)
-- [ ] Pair work với: _<tên đồng đội nếu có>_
+### Khi nào không nên dùng Hybrid search?
+Nên tránh dùng hybrid search khi **độ trễ (latency) thấp và tiết kiệm tài nguyên** là ưu tiên hàng đầu. Hybrid yêu cầu chạy song song hai truy vấn rồi hợp nhất lại, làm tăng chi phí tính toán và thời gian phản hồi. Ngoài ra, với các tác vụ chỉ cần khớp chính xác tuyệt đối (như tra cứu log, ID hệ thống), thành phần ngữ nghĩa sẽ thừa thãi, gây tốn tài nguyên và có thể làm nhiễu kết quả.
