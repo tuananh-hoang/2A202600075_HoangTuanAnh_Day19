@@ -1,6 +1,5 @@
 """
 demo.py — 5-query demonstration of HybridMemoryAgent
-=====================================================
 Run:  python bonus/demo.py
 
 What this script does:
