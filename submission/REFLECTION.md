@@ -1,5 +1,5 @@
 # Reflection
-
+## Hoàng Tuấn Anh - 2A202600075
 ### Chế độ nào tối ưu cho loại truy vấn nào và tại sao?
 - **Keyword Search (BM25):** Tốt nhất cho truy vấn chính xác, mã ID, hoặc từ vựng hiếm vì nó dựa trên tần suất từ khóa (TF-IDF).
 - **Semantic Search (Vector):** Thắng khi tìm kiếm diễn giải (paraphrase) hoặc theo ngữ cảnh. Nó nắm bắt ý nghĩa qua dense embeddings, tìm ra kết quả liên quan dù từ khóa không khớp hoàn toàn.
